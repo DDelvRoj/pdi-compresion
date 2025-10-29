@@ -11,7 +11,7 @@ services:
     ports:
       - "${PORT}:8100" 
 
-    enviroment:
+    environment:
       - 'VITE_IMG_PROXY_URL=${VITE_IMG_PROXY_URL}'
       - 'PORT=${PORT}'
       
