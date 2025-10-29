@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
     },
     plugins: [react()],
     server:{
-      allowedHosts:['*']
+      allowedHosts:['pdi.ddelvalle.xyz']
     }
   };
 });
