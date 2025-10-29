@@ -9,7 +9,7 @@ services:
       dockerfile: Dockerfile
       
     ports:
-      - "${PORT}:8100" 
+      - "${PORT}:5173" 
 
     environment:
       - 'VITE_IMG_PROXY_URL=${VITE_IMG_PROXY_URL}'
