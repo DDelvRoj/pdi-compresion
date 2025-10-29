@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  ionic-react-dev:
+    image: pdi-compresion:latest
+    
+    build:
+      context: .
+      dockerfile: Dockerfile
+      
+    ports:
+      - "${PORT}:8100" 
+
+    enviroment:
+      - 'VITE_IMG_PROXY_URL=${VITE_IMG_PROXY_URL}'
+      - 'PORT=${PORT}'
+      
+    restart: always
