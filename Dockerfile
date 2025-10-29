@@ -14,7 +14,7 @@ RUN npm ci
 COPY . .
 
 
-EXPOSE 8100 
+EXPOSE 5173 
 
 
-CMD ["ionic", "serve", "--host", "0.0.0.0"]
+CMD ["npm", "run", "dev", "--host", "0.0.0.0"]
